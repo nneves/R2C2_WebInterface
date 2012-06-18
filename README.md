@@ -122,6 +122,7 @@ C) on a Linux Embedded board such as Olinuxino
 3- Install the Node.js Serial Port package inside the R2C2_WebInterface directory (local package installation)
 ==============================================================================================================
 > cd R2C2_WebInterface
+
 > npm install serialport
 
 4- Connnect the R2C2 board to the PC/Laptop/Linux Embedded Board
@@ -150,7 +151,7 @@ Dev Note: if using Chrome or Safari WebBrowser you can get more info by right cl
 
 Additional Dev Note: The current UI demo is using Javascript asynchronous requests (AJAX) for speed performance and also node.js request <-> serial port bridge is also in async mode, so there is 2 async layers of abstraction.
 
-Future Dev Note: Will be prototyping Node.js and websockets communication for speed/performance boost latter, but since it requires the latest webbrowsers support, older mobile OSs may not take the advantage of this improcements. There are solutions for this using a special Node.js package that will have multiple fallback communication solutions.
+Future Dev Note: Will be prototyping Node.js and websockets communication for speed/performance boost latter, but since it requires the latest webbrowsers support, older mobile OSs may not take the advantage of this improvements. There are solutions for this using a special Node.js package that will have multiple fallback communication solutions.
 
 
 
@@ -159,8 +160,7 @@ List of ideas that can be usefull to implement on this R2C2 WebInterface
 - Map HTML objects such as images, buttons, etc to send R2C2 GCode commands in order to remote control the board [DONE]
 
 // Todo
-- Send an STL 3d object file (or send the http://www.thingiverse.com/ URL for the STL object) to the R2C2 WebInterface in order for GCODE conversion (local Linux Embedded board conversion by using a specific tool such as https://github.com/alexrj/Slic3r or use a remote Linux Server to make the hard work and return the final GCODE)
-Note: not really sure if this is possible, have little experience on this (feedback will be appreciated)
+- Send an STL 3d object file (or send the http://www.thingiverse.com/ URL for the STL object) to the R2C2 WebInterface in order for GCODE conversion (local Linux Embedded board conversion by using a specific tool or use a remote Linux Server to make the hard work and return the final GCODE)
 
 - List the R2C2 board existing .gcode files (cached in the R2C2 SD card) and select a specific file for re-print
 
