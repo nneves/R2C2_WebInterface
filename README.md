@@ -79,6 +79,7 @@ For the Node.JS core it's a bit more tricky cause you really need to understand 
 A) on a Linux Laptop (repository direct installation) using Linux Ubuntu 12.04 (Clean install):
 > sudo apt-get update
 > sudo apt-get upgrade
+> sudo apt-get install build-essential
 
 // install node.js from Ubuntu's repository
 > sudo apt-get install nodejs npm
@@ -89,6 +90,11 @@ v0.6.12
 
 > npm --version
 1.1.4
+
+
+NOTE: you may have to had this to your user .bashrc file (add it to the end)
+> nano ~/.bashrc
+export NODE_PATH="/usr/local/lib/node"
 
 
 B) on a Linux Embedded board such as Raspberry PI
