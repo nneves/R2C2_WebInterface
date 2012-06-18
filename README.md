@@ -78,7 +78,9 @@ For the Node.JS core it's a bit more tricky cause you really need to understand 
 ==========================
 A) on a Linux Laptop (repository direct installation) using Linux Ubuntu 12.04 (Clean install):
 > sudo apt-get update
+
 > sudo apt-get upgrade
+
 > sudo apt-get install build-essential
 
 // install node.js from Ubuntu's repository
