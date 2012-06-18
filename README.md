@@ -103,7 +103,7 @@ v0.6.12
 NOTE: you may have to had this to your user .bashrc file (add it to the end)
 > nano ~/.bashrc
 
-export NODE_PATH="/usr/local/lib/node"
+> export NODE_PATH="/usr/local/lib/node"
 
 
 B) on a Linux Embedded board such as Raspberry PI
