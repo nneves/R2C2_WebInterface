@@ -49,7 +49,7 @@ Why Node.JS? Why not, Beaglebone is prototyping with it, so this is also a good 
 Node.JS will also provide additional packages to be installed and also support some of the latest and bleeding edge web protocols. 
 Also, since the UI will use HTML+Javascript to compose the webinterface frontend, using Javascript in the webserver code should make it simpler to bind the 2 worlds together.
 
-Aditionally, Node.JS will require to install an aditional package for Serial Port communication, but that's all!
+Aditionally, Node.JS will require to install an extra package for Serial Port communication, but that's all!
 
 What should one expect from this initial prototype
 ==================================================
@@ -102,6 +102,7 @@ v0.6.12
 
 NOTE: you may have to had this to your user .bashrc file (add it to the end)
 > nano ~/.bashrc
+
 export NODE_PATH="/usr/local/lib/node"
 
 
