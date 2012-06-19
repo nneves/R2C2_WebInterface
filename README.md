@@ -112,7 +112,9 @@ nano ~/.bashrc
 export NODE_PATH="/usr/local/lib/node"
 ```
 
-B) on a Linux Embedded board such as Raspberry PI
+B) on a Linux Embedded board such as Raspberry PI (manual compilation)
+
+NOTE: For an easy installation follow the previous instructions (installing from repository)
 
 // Install packages:
 ```bash
@@ -146,7 +148,7 @@ all': {
 ./configure  --openssl-libpath=/usr/lib/ssl
 ```
 
-// Install!!
+// Install
 ```bash
 make
 sudo make install
