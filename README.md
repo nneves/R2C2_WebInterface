@@ -3,11 +3,11 @@ R2C2 WebInterface
 
 WebInterface using Node.JS on a Linux Embedded board to remote control an R2C2 RepRap 3D printers/CNC board via USB Serial Port connection.
 
-![R2C2WI](/nneves/R2C2_WebInterface/raw/master/images/R2C2WI.png)
-http://github.com/nneves/R2C2_WebInterface/raw/master/images/R2C2WI.png
+![R2C2WI](/nneves/R2C2_WebInterface/raw/master/specs/R2C2WI.png)
 
-![R2C2WI2](/nneves/R2C2_WebInterface/raw/master/images/R2C2WI2.png)
-http://github.com/nneves/R2C2_WebInterface/raw/master/images/R2C2WI.png
+![R2C2WI2](/nneves/R2C2_WebInterface/raw/master/specs/R2C2WI2.png)
+
+![R2C2WI3](/nneves/R2C2_WebInterface/raw/master/specs/r2c2_webinterface_demo.png)
 
 R2C2 RepRap 3D printers/CNC
 ===========================
