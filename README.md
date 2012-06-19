@@ -113,6 +113,7 @@ export NODE_PATH="/usr/local/lib/node"
 ```
 
 B) on a Linux Embedded board such as Raspberry PI
+
 // Install packages:
 ```bash
 sudo apt-get install git-core build-essential libssl-dev
