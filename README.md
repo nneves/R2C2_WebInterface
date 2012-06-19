@@ -83,27 +83,27 @@ For the Node.JS core it's a bit more tricky cause you really need to understand 
 1- How to install Node.JS:
 ==========================
 A) on a Linux Laptop (repository direct installation) using Linux Ubuntu 12.04 (Clean install):
-	> sudo apt-get update
+	sudo apt-get update
 
-	> sudo apt-get upgrade
+	sudo apt-get upgrade
 
-	> sudo apt-get install git-core build-essential libssl-dev
+	sudo apt-get install git-core build-essential libssl-dev
 
 // install node.js from Ubuntu's repository:
-	> sudo apt-get install nodejs npm
+	sudo apt-get install nodejs npm
 
 // check nodejs and npm (package manager) version:
-	> node --version
+	node --version
 	v0.6.12
 
-	> npm --version
+	npm --version
 	1.1.4
 
 
 NOTE: you may have to had this to your user .bashrc file (add it to the end)
-	> nano ~/.bashrc
+	nano ~/.bashrc
 
-	> export NODE_PATH="/usr/local/lib/node"
+	export NODE_PATH="/usr/local/lib/node"
 
 
 B) on a Linux Embedded board such as Raspberry PI
@@ -116,18 +116,18 @@ C) on a Linux Embedded board such as Olinuxino
 
 2- Get R2C2 WebInterface code from the github
 =============================================
-	> git clone git://github.com/nneves/R2C2_WebInterface.git
+	git clone git://github.com/nneves/R2C2_WebInterface.git
 
 
 3- Install the Node.js Serial Port package inside the R2C2_WebInterface directory (local package installation)
 ==============================================================================================================
-	> cd R2C2_WebInterface
+	cd R2C2_WebInterface
 
-	> npm install serialport
+	npm install serialport
 
 4- Connnect the R2C2 board to the PC/Laptop/Linux Embedded Board
 ================================================================
-	> dmesg | grep "cdc_acm"
+	dmesg | grep "cdc_acm"
 
 Should list the R2C2 USB Serial Port such as: "ttyACM0: USB ACM device"
 
@@ -135,13 +135,13 @@ Should list the R2C2 USB Serial Port such as: "ttyACM0: USB ACM device"
 =====================
 1st argument should set to the tcp/ip port number (if not defined will use the default 8080)
 2nd argument should be set to the R2C2 Serial Port device (if not defined will use the default /dev/ttyACM0)
-	> node server.js 8080 /dev/ttyACM0
+	node server.js 8080 /dev/ttyACM0
 
 Note: to run on lower tcp/ip ports such as 80 you need to have special permissions (or allow it in the firewall)
 to run in port 80 I had to use sudo, but should avoid this approach!
 
 Note2: if you just want to test it without connecting it to the R2C2 board, just launch with:
-	> node server.js 8080 /dev/null
+	node server.js 8080 /dev/null
 
 6- Browse the the Node.js server IP:Port
 ========================================
