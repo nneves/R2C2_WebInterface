@@ -116,44 +116,8 @@ B) on a Linux Embedded board such as Raspberry PI (manual compilation)
 
 NOTE: For an easy installation follow the previous instructions (installing from repository)
 
-// Install packages:
-```bash
-sudo apt-get install git-core build-essential libssl-dev
-```
-
-// Grab node source
-```bash
-git clone https://github.com/joyent/node.git
-git checkout v0.6.18-release (or current stable)
-```
-
-// Use armv6 architecture to compile
-```bash
-export CCFLAGS='-march=armv6'
-export CXXFLAGS='-march=armv6'
-```
-
-// Edit deps/v8/SConstruct, line 82
-```bash
-all': {
-   'CCFLAGS':      ['$DIALECTFLAGS', '$WARNINGFLAGS', '-march=armv6'],
-   'CXXFLAGS':     ['-fno-rtti', '-fno-exceptions', '-march=armv6'],
- },
-```
-
-// Edit same file, line 157, remove *'vfp3:on'* and *'simulator:none'
-
-// configure the build
-```bash
-./configure  --openssl-libpath=/usr/lib/ssl
-```
-
-// Install
-```bash
-make
-sudo make install
-```
-
+- for Node.js v0.6.20: https://github.com/nneves/R2C2_WebInterface/blob/master/specs/Compile_RaspberryPi_NodeV0.6.20.md
+- for Node.js v0.8.2: https://github.com/nneves/R2C2_WebInterface/blob/master/specs/Compile_RaspberryPi_NodeV0.8.x.md
 
 C) on a Linux Embedded board such as Olinuxino
 ... WIP
