@@ -36,9 +36,13 @@ sudo GYP_DEFINES='armv7=0' CCFLAGS='-march=armv6' CXXFLAGS='-march=armv6' make i
 ```
 
 [Tested! Just complains while running 'make test']
+
 Compile time (on a slugish SD card 5MB to 7.5MBx Write speed): 134m52.277s
+
 Complains about IO not accessible while running 'make test' (maybe requires to call from sudo with EXPORT vars)
+
 Tested npm install [OK]
+
 Launched R2C2_WebInterface node app + serialport [OK]
 
 Compile Node.js v0.8.x on a RaspberryPi with Linux Debian armhf (hardware floating point) wheezy (raspbian) [Un-Tested]
