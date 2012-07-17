@@ -24,7 +24,7 @@ GCode Commands: http://reprap.org/wiki/G-code
 How to remote control the R2C2 board
 ====================================
 
-The R2C2 board connects to a PC via USB (Virtual Serial Port Communication) and can be remote controlled by sending a GCODE command, such as (GCode command to move the X Step Motor by 1mm at 8000mm/min. speed): G1 X1.0 Y0.0 Z0.0 F8000
+The R2C2 board connects to a PC via USB (Virtual Serial Port Communication - CDC ACM) and can be remote controlled by sending a GCODE command, such as (GCode command to move the X Step Motor by 1mm at 8000mm/min. speed): G1 X1.0 Y0.0 Z0.0 F8000
 
 Getting it to be remote controlled from multiple platforms such as mobile, tablets, laptops/desktops should be easy if one could use something standard and common to all platforms, such as using the web browser to display the UI and using the web protocols to communicate with the Embedded Linux board, that would then bridge the web request to the hardware layer.
 
