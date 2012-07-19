@@ -78,5 +78,5 @@ make test
 ```
 Set the EXPORT vars to su before making sudo make install (necessary to avoid re-compile in su)
 ```bash
-sudo export GYP_DEFINES='armv7=0' export CXXFLAGS='-march=armv6 -mfpu=vfp -mfloat-abi=hard -DUSE_EABI_HARDFLOAT' export CCFLAGS='-march=armv6 -mfpu=vfp -mfloat-abi=hard  -DUSE_EABI_HARDFLOAT' make install
+sudo GYP_DEFINES='armv7=0' CXXFLAGS='-march=armv6 -mfpu=vfp -mfloat-abi=hard -DUSE_EABI_HARDFLOAT' CCFLAGS='-march=armv6 -mfpu=vfp -mfloat-abi=hard  -DUSE_EABI_HARDFLOAT' make install
 ```
