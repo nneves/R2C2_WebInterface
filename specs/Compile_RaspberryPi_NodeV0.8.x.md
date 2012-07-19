@@ -1,6 +1,7 @@
 Compile Node.js v0.8.x on a RaspberryPi with Linux Debian armel wheezy
 ======================================================================
 source: https://github.com/gflarity/node_pi
+
 distro: 2012-06-18-wheezy-beta.zip
 
 Install the necessary dependecies:
@@ -27,6 +28,7 @@ export CXXFLAGS='-march=armv6'
 Configure and make (disable snapshot):
 ```bash
 ./configure --shared-openssl --without-snapshot
+
 make
 
 (optional)
@@ -51,6 +53,7 @@ Launched R2C2_WebInterface node app + serialport [OK]
 Compile Node.js v0.8.x on a RaspberryPi with Linux Debian armhf (hardware floating point) wheezy (raspbian)
 ===========================================================================================================
 source: https://gist.github.com/3119325
+
 distro: 2012-07-15-wheezy-raspbian.zip
 
 Install the necessary dependecies:
@@ -77,6 +80,7 @@ export CCFLAGS='-march=armv6 -mfpu=vfp -mfloat-abi=hard -DUSE_EABI_HARDFLOAT'
 Configure and make (disable snapshot):
 ```bash
 ./configure --shared-openssl --without-snapshot
+
 make
 
 (optional)
