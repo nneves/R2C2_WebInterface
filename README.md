@@ -190,3 +190,20 @@ List of ideas that can be usefull to implement on this R2C2 WebInterface
 - Implement support to control the 3D Printer/CNC via joystick connected to the Linux Embedded board (or maybe some game console commands - Wii, etc)
 
 - WebCam integration in the Linux Embedded board (just for fun - may be usefull to give access from the internet to show the concept and the remote user can actually see it working)
+
+License
+=======
+Copyright (C) 2012 Nelson Neves
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see http://www.gnu.org/licenses/agpl-3.0.html
