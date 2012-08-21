@@ -130,7 +130,7 @@ C) on a Linux Embedded board such as Olinuxino
 2- Get R2C2 WebInterface code from the github
 =============================================
 ```bash
-git clone git://github.com/nneves/R2C2_WebInterface.git
+git clone -b v1.0.0 git://github.com/nneves/R2C2_WebInterface.git R2C2_WebInterface_V1.0.0
 ```
 
 3- Install the Node.js necessary packages inside the R2C2_WebInterface directory (local package installation)
