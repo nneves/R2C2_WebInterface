@@ -74,10 +74,15 @@ For the Node.JS core it's a bit more tricky cause you really need to understand 
 (INSTRUCTIONS) How to Test the R2C2 WebInterface
 ================================================
 1- Install Node.JS
+
 2- Get R2C2_WebInterface code from the github
-3- Install the Node.js Serial Port package inside the R2C2_WebInterface directory (local package installation)
+
+3- Install the Node.js necessary packages inside the R2C2_WebInterface directory (local package installation)
+
 4- Connnect the R2C2 board to the PC/Laptop/Linux Embedded Board
+
 5- Launch Node.js app
+
 6- Browse the the Node.js server IP:Port
 
 1- How to install Node.JS:
@@ -128,7 +133,7 @@ C) on a Linux Embedded board such as Olinuxino
 git clone git://github.com/nneves/R2C2_WebInterface.git
 ```
 
-3- Install the Node.js package (local package installation)
+3- Install the Node.js necessary packages inside the R2C2_WebInterface directory (local package installation)
 ==============================================================================================================
 ```js
 cd R2C2_WebInterface
