@@ -3,11 +3,11 @@ R2C2 WebInterface
 
 WebInterface using Node.JS on a Linux Embedded board to remote control an R2C2 RepRap 3D printers/CNC board via USB Serial Port connection.
 
-![R2C2WI](/nneves/R2C2_WebInterface/raw/master/specs/R2C2WI.png)
+![R2C2WI](/nneves/R2C2_WebInterface/raw/tree/v1.0.0/specs/R2C2WI.png)
 
-![R2C2WI2](/nneves/R2C2_WebInterface/raw/master/specs/R2C2WI2.png)
+![R2C2WI2](/nneves/R2C2_WebInterface/raw/tree/v1.0.0/specs/R2C2WI2.png)
 
-![R2C2WI3](/nneves/R2C2_WebInterface/raw/master/specs/r2c2_webinterface_demo.png)
+![R2C2WI3](/nneves/R2C2_WebInterface/raw/tree/v1.0.0/specs/r2c2_webinterface_demo.png)
 
 R2C2 RepRap 3D printers/CNC
 ===========================
@@ -121,8 +121,8 @@ B) on a Linux Embedded board such as Raspberry PI (manual compilation)
 
 NOTE: For an easy installation follow the previous instructions (installing from repository)
 
-- for Node.js v0.6.20: https://github.com/nneves/R2C2_WebInterface/blob/master/specs/Compile_RaspberryPi_NodeV0.6.20.md
-- for Node.js v0.8.2: https://github.com/nneves/R2C2_WebInterface/blob/master/specs/Compile_RaspberryPi_NodeV0.8.x.md
+- for Node.js v0.6.20: https://github.com/nneves/R2C2_WebInterface/blob/tree/v1.0.0/specs/Compile_RaspberryPi_NodeV0.6.20.md
+- for Node.js v0.8.2: https://github.com/nneves/R2C2_WebInterface/blob/tree/v1.0.0/specs/Compile_RaspberryPi_NodeV0.8.x.md
 
 C) on a Linux Embedded board such as Olinuxino
 ... WIP
