@@ -1,0 +1,52 @@
+<!doctype html>  
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>R2C2 Control Panel WebInterface</title>
+  <link rel="stylesheet" href="stylesheets/reset.css" media="all" />
+  <link rel="stylesheet" href="stylesheets/style.css" media="all" />
+</head>
+<body>
+	<div id="header" class="header"><img src="images/r2c2.png" alt="R2C2" class="header_image"></div>
+
+	<div id="block01" class="block01">
+    <!--<img src="images/y-plus.png" class="yplus" onClick="r2c2_webinterface.sendCmd('G1 F4000;G1 X0.000 Y50.000');">
+        <img src="images/y-minus.png" class="yminus" onClick="r2c2_webinterface.sendCmd('G1 F4000;G1 X0.000 Y0.000');"> -->
+    <img src="images/y-plus.png" class="yplus" onClick="r2c2_webinterface.moveYPlus();">
+    <img src="images/y-minus.png" class="yminus" onClick="r2c2_webinterface.moveYMinus();">
+		<img src="images/x-plus.png" class="xplus" onClick="r2c2_webinterface.moveXPlus();">
+		<img src="images/x-minus.png" class="xminus" onClick="r2c2_webinterface.moveXMinus();">
+		<img src="images/z-plus.png" class="zplus" onClick="r2c2_webinterface.moveZPlus();">
+		<img src="images/z-minus.png" class="zminus" onClick="r2c2_webinterface.moveZMinus();">
+    <img src="images/home.png" width="61" height="31" class="home" onClick="r2c2_webinterface.sendCmd('G28'); r2c2_webinterface.resetXYZ();">
+	</div>
+
+    <div id="block03" class="block03">
+      <p>Jog Mode (mm)</p>
+      <input type="text" name="njogmode" id="jogname" value="10" class="jogmode" />
+    </div>
+
+    <div id="block04" class="block04">
+      <p>XY Feedrate (mm/min.)</p>
+      <input type="text" name="nxyfeedrate" id="xyfeedrate" value="4000" class="xyfeedrate" />
+    </div>      
+
+    <div id="block05" class="block05">
+      <p>Z Feedrate (mm/min.)</p>
+      <input type="text" name="nzfeedrate" id="zfeedrate" value="120" class="zfeedrate" />
+    </div>      
+
+    <div id="block02" class="block02">     
+      <p>GCode manual command</p>
+      <textarea id="textSendCmd" rows="4" cols="50">G1 X0 Y0 Z0 F8000</textarea><br>
+      <button id="btnSendCmd" type="button" onClick="r2c2_webinterface.sendCmd(textSendCmd.value)">Send Command</button><br><br>
+    </div>
+
+<!--<script src="js/libs/jquery-1.7.1.min.js"></script>-->
+<!--<script src="javascripts/r2c2.js"></script>-->
+  <script type="text/javascript" src="javascripts/r2c2.js"></script>
+  <script type="text/javascript">
+    var r2c2_webinterface = R2C2.WebInterface();
+  </script>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "description": "R2C2 Remote Control WebInterface",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "union": "0.3.0",
+    "flatiron": "0.2.8",
+    "ecstatic": "0.1.6",
+    "serialport": "1.0.4"
+  },
+  "devDependenices": {
+    "api-easy": "0.3.2",
+    "vows": "0.6.1"
+  },
+  "scripts": {
+    "test": "vows --spec",
+    "start": "node app.js 8080 /dev/null"
+  },
+  "name": "R2C2_WebInterface",
+  "author": "Nelson Neves",
+  "homepage": "/"
+}
