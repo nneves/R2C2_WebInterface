@@ -121,8 +121,7 @@ B) on a Linux Embedded board such as Raspberry PI (manual compilation)
 
 NOTE: For an easy installation follow the previous instructions (installing from repository)
 
-- for Node.js v0.6.20: https://github.com/nneves/R2C2_WebInterface/blob/v1.0.0/specs/Compile_RaspberryPi_NodeV0.6.20.md
-- for Node.js v0.8.2: https://github.com/nneves/R2C2_WebInterface/blob/v1.0.0/specs/Compile_RaspberryPi_NodeV0.8.x.md
+https://github.com/nneves/Raspberrypi_NodeJS
 
 C) on a Linux Embedded board such as Olinuxino
 ... WIP
