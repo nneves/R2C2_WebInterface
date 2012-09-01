@@ -14,7 +14,7 @@ Get Node.js source and apply patch:
 git clone https://github.com/gflarity/node_pi.git
 git clone -b v0.8.2 git://github.com/joyent/node.git
 cd node
-git apply --stat ../node_pi/v0.8.2-release-raspberrypi.patch
+git apply --stat --apply ../node_pi/v0.8.2-release-raspberrypi.patch
 ```
 
 Set EXPORT vars to be used during compilation:
@@ -65,7 +65,7 @@ Get Node.js source and apply patch:
 git clone https://github.com/gflarity/node_pi.git
 git clone -b v0.8.2 git://github.com/joyent/node.git
 cd node
-git apply --stat ../node_pi/v0.8.2-release-raspberrypi.patch
+git apply --stat --apply ../node_pi/v0.8.2-release-raspberrypi.patch
 ```
 
 Set EXPORT vars to be used during compilation:
