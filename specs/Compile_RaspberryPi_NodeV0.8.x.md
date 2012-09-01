@@ -12,7 +12,7 @@ sudo apt-get install git-core build-essential libssl-dev
 Get Node.js source and apply patch:
 ```bash
 git clone https://github.com/gflarity/node_pi.git
-git clone -b v0.8.2-release https://github.com/joyent/node.git
+git clone -b v0.8.2 git://github.com/joyent/node.git
 cd node
 git apply --stat ../node_pi/v0.8.2-release-raspberrypi.patch
 ```
@@ -63,7 +63,7 @@ sudo apt-get install git-core build-essential libssl-dev
 Get Node.js source and apply patch:
 ```bash
 git clone https://github.com/gflarity/node_pi.git
-git clone -b v0.8.2-release https://github.com/joyent/node.git
+git clone -b v0.8.2 git://github.com/joyent/node.git
 cd node
 git apply --stat ../node_pi/v0.8.2-release-raspberrypi.patch
 ```
