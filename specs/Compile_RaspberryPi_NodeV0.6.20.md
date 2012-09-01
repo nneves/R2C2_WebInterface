@@ -10,9 +10,8 @@ sudo apt-get install git-core build-essential libssl-dev
 Get Node.js source and apply patch:
 ```bash
 git clone https://github.com/gflarity/node_pi.git
-git clone https://github.com/joyent/node.git
+git clone -b v0.6.20-release https://github.com/joyent/node.git
 cd node
-git checkout origin/v0.6.20-release -b v0.6.20-release
 git apply --stat ../node_pi/v0.8.2-release-raspberrypi.patch
 ```
 
