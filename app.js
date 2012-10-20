@@ -25,5 +25,5 @@ app.router.get('/gcode/:cmd', ecore.parseGCodeCmd);
 app.router.get('/gcodestream/:filename', ecore.streamGCodeFile);
 
 // launch app on tcpoprt
-app.start(ecore.getTcpPort());
-console.log('WebInterface Server running on port '+ecore.getTcpPort());
+app.start(ecore.getTcpPort);
+console.log('WebInterface Server running on port '+ecore.getTcpPort);
