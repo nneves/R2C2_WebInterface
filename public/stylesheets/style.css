@@ -60,6 +60,13 @@ a {
   background-color: #DEDEDE;
 }
 
+.block06 {
+  position:absolute;
+  left:60px;
+  top:520px; 
+  width:400px;
+}
+
 .xplus {
   position:absolute;
   left:220px;
@@ -112,4 +119,8 @@ a {
 
 .zfeedrate {
   width:120px;  
+}
+
+.gcodefilestream {
+  width:365px;  
 }

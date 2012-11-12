@@ -42,6 +42,12 @@
       <button id="btnSendCmd" type="button" onClick="r2c2_webinterface.sendCmd(textSendCmd.value)">Send Command</button><br><br>
     </div>
 
+    <div id="block06" class="block06">
+      <p>GCode File Stream</p>
+      <input type="text" name="gcodefs" id="gcodefs" value="3D_Knot.gcode" class="gcodefilestream" />
+      <button id="btnFileStream" type="button" onClick="r2c2_webinterface.selectFile2Print(gcodefs.value)">Send to Printer</button><br><br>
+    </div>
+
 <!--<script src="js/libs/jquery-1.7.1.min.js"></script>-->
 <!--<script src="javascripts/r2c2.js"></script>-->
   <script type="text/javascript" src="javascripts/r2c2.js"></script>

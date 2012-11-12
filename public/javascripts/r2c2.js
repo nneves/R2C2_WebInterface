@@ -47,6 +47,23 @@ R2C2.WebInterface.prototype.sendCmd = function (cmd) {
 		sendReq.send(null);
 	}	
 };
+
+R2C2.WebInterface.prototype.selectFile2Print = function (filename) {
+
+	// internal ajax request object
+	var sendReq = this._getXmlHttpRequestObject();	
+	var url_cmd = '/gcodestream/'+filename;
+
+	if (sendReq.readyState == 4 || sendReq.readyState == 0) {
+		sendReq.open("GET",url_cmd,true);
+        sendReq.setRequestHeader('Accept','application/json');
+        sendReq.setRequestHeader('Content-Type','text/xml');
+		sendReq.onreadystatechange = this._sendCmdCB(url_cmd);
+        console.log("-> AJAX cmd["+url_cmd+"]");
+		sendReq.send(null);
+	}	
+};
+
 //-----------------------------------------------------------------------------	
 
 //-----------------------------------------------------------------------------
