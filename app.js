@@ -20,53 +20,6 @@ app.http.before = [
   ecstatic(__dirname + '/public')
 ];
 
-/*
-function norouterfound () {
-	console.log('no router found');
-}
-function onbefore (data) {
-	console.log(data);
-}
-
-// using director
-var options = {"strict":false, "notfound":norouterfound, "before":onbefore };
-var routes = {
-
-    //
-    // given the route '/hello/world'. - not working
-    //
-    '/hello': {
-      '/(\\w+)': {
-        //
-        // this function will return the value 'world'.
-        //
-        on: function (who) { console.log(who) }
-      }
-    }
-};
-app.router = new director.Router(routes);
-app.router.configure(options);
-*/
-
-/*
-var routes = {
-
-    //
-    // given the route '/hello/world'.
-    //
-    '/hello': {
-      '/(\\w+)': {
-        //
-        // this function will return the value 'world'.
-        //
-        on: function (who) { console.log(who) }
-      }
-    },
-    '/bye': {get: helloWorld}
-};
-app.router.mount(routes);
-*/
-
 // using flatiron
 //app.router.configure({"strict":false, "notfound":norouterfound, "before":onbefore });
 
@@ -76,15 +29,6 @@ app.router.get('/gcode/:cmd', ecore.parseGCodeCmd);
 app.router.get('/gcodestream/:filename', ecore.streamGCodeFile);
 
 app.router.get(/stldownload\/((\w|.)*)/, ecore.stlDownload);
-/*
-app.router.get(/stldownload\/((\w|.)*)/, function (data) {
-	console.log('Hello World: '+data);
-
-	// responding back to the brower request
-	this.res.writeHead(200, {'Content-Type':'text/plain'});
-	this.res.write('Hello World: '+data);
-	this.res.end();		
-}); */
 
 // launch app on tcpoprt
 app.start(ecore.getTcpPort);
