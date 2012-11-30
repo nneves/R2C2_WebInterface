@@ -199,6 +199,12 @@ List of ideas that can be usefull to implement on this R2C2 WebInterface
 
 - WebCam integration in the Linux Embedded board (just for fun - may be usefull to give access from the internet to show the concept and the remote user can actually see it working)
 
+Project Status
+==============
+The R2C2 project is now forked into a more generic 3d Printer Interface: https://github.com/nneves/3DPrinterInterface
+Heavy code re-factoring will be in place for a cleaner and more modular interface.
+The new project will support the R2C2 currently working functionalities and much more!
+
 License
 =======
 Copyright (C) 2012 Nelson Neves
