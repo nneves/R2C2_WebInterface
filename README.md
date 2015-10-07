@@ -65,7 +65,7 @@ Can I design/customize the frontend UI or even the backend core?
 Yes! You just need to have some notions on own HTML and webserver requests works.
 Adding an extra button to send some GCODE commands to the R2C2 should be pretty simple!
 
-If you are not confortable doing an UI interface, you can always ask someone to do it for you (or even a professional) and hook things up easily.
+If you are not comfortable doing an UI interface, you can always ask someone to do it for you (or even a professional) and hook things up easily.
 
 For the Node.JS core it's a bit more tricky cause you really need to understand the node concepts, but not that difficult to acheive, just requires a bit more study (I'm also learning Node.js, so my code may need improvement)!
 
